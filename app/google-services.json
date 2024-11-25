@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "429157861231",
+    "project_id": "quiz-online-399eb",
+    "storage_bucket": "quiz-online-399eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429157861231:android:7093f391b1fda83d474a9a",
+        "android_client_info": {
+          "package_name": "com.example.onlinequiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlIMIVK6wrQrcEHbFs0vPoI4vadbC7FaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

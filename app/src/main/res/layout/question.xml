@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/grey_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="22dp"
+        android:padding="10dp"
+        android:textColor="@color/main"
+        android:text="Асуулт"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="Хариулт 1"/>
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="Хариулт 2"/>
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="Хариулт 3"/>
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="Хариулт 4"
+            android:layout_marginBottom="7dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/green_dark"
+        android:background="@drawable/green_background"
+        android:text="Зөв хариулт"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

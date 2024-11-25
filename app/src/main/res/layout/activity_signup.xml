@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:text="Шинэ хаяг үүсгэх"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:padding="20dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/grey_edittext"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="100dp"
+            android:hint="Нэр"/>
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/grey_edittext"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="15dp"
+            android:hint="Овог"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/grey_edittext"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="15dp"
+            android:hint="Е-Мейл"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/grey_edittext"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="15dp"
+            android:hint="Нууц үг"/>
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/grey_edittext"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="15dp"
+            android:hint="Нууц үг давтах"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:text="Бүртгүүлэх"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/main"
+            android:text="Хаяг байгаа юу? Нэвтрэх"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

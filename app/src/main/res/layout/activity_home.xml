@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:id="@+id/signout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/signout"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Тавтай морил!"
+            android:layout_toLeftOf="@+id/signout"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:padding="20dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="22dp"
+                        android:padding="10dp"
+                        android:textColor="@color/main"
+                        android:text="Шалгалт эхлүүлэх"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/startQuiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="10dp"
+                            android:background="@drawable/button_background"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+                            android:text="Эхлэх"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <EditText
+                            android:id="@+id/start_quiz_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="10dp"
+                            android:background="@drawable/white_edittext"
+                            android:textColor="@color/black"
+                            android:inputType="numberSigned"
+                            android:imeOptions="actionDone"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Шалгалтын ID"
+                            android:layout_toLeftOf="@+id/startQuiz"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/solvedQuizzes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow"
+                        android:scaleType="centerInside"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:text="Таны хийсэн шалгалтууд"
+                        android:textColor="@color/main"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textColor="@color/main"
+                        android:text="Нийт асуултууд"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/total_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="000"
+                        android:textStyle="bold"
+                        android:background="@drawable/circle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textColor="@color/main"
+                        android:text="Нийт оноо"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/total_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="000"
+                        android:textStyle="bold"
+                        android:background="@drawable/circle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="22dp"
+                        android:padding="10dp"
+                        android:textColor="@color/main"
+                        android:text="Шалгалт үүсгэх"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/createQuiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="10dp"
+                            android:background="@drawable/button_background"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+                            android:text="Үүсгэх"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <EditText
+                            android:id="@+id/quiz_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="10dp"
+                            android:background="@drawable/white_edittext"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Шалгалтын нэр"
+                            android:layout_toLeftOf="@+id/createQuiz"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/your_quizzes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow"
+                        android:scaleType="centerInside"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:text="Таны асуултууд"
+                        android:textColor="@color/main"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/grey_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="22dp"
+            android:padding="10dp"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main"
+            android:hint="Асуулт"
+            android:background="@color/transparent"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                    android:id="@+id/option1rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/main"/>
+
+                    <RadioButton
+                        android:id="@+id/option2rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/main"/>
+
+                    <RadioButton
+                        android:id="@+id/option3rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/main"/>
+
+                    <RadioButton
+                        android:id="@+id/option4rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/main"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/option1et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:background="@color/transparent"
+                    android:hint="Хариулт 1"/>
+
+                <EditText
+                    android:id="@+id/option2et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:background="@color/transparent"
+                    android:hint="Хариулт 2"/>
+
+                <EditText
+                    android:id="@+id/option3et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:background="@color/transparent"
+                    android:hint="Хариулт 3"/>
+
+                <EditText
+                    android:id="@+id/option4et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:background="@color/transparent"
+                    android:hint="Хариулт 4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/grey_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:padding="10dp"
+            android:textColor="@color/main"
+            android:text="Шинэ асуулт"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

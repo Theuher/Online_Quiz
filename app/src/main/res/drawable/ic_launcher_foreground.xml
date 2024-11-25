@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="15dp"
+    android:height="20dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Letter T centered and moved down -->
+    <path
+        android:pathData="M37,35h34v10h-12v30h-10v-30h-12z"
+        android:fillColor="#000000" />
+</vector>
