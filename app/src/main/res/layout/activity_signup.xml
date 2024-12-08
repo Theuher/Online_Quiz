@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main"
+    android:background="@color/purple_700"
     android:gravity="top|center_horizontal"
     android:orientation="vertical"
     tools:context=".Signup">
@@ -112,7 +112,7 @@
             android:gravity="center"
             android:textSize="20dp"
             android:padding="10dp"
-            android:textColor="@color/main"
+            android:textColor="@color/purple_700"
             android:text="Хаяг байгаа юу? Нэвтрэх"
             android:textStyle="bold"/>
 

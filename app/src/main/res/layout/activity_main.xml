@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main"
+    android:background="@color/purple_700"
     android:gravity="top|center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -73,10 +73,20 @@
             android:gravity="center"
             android:textSize="20dp"
             android:padding="10dp"
-            android:textColor="@color/main"
+            android:textColor="@color/purple_700"
             android:text="Шинэ хаяг үүсгэх"
             android:textStyle="bold"/>
 
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/purple_700"
+            android:text="Нууц үг мартсан"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </LinearLayout>

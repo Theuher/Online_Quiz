@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main"
+    android:background="@color/purple_700"
     android:gravity="top|center_horizontal"
     android:orientation="vertical"
     tools:context=".Result">
@@ -42,7 +42,7 @@
                 android:textSize="25dp"
                 android:padding="5dp"
                 android:gravity="center"
-                android:textColor="@color/main"
+                android:textColor="@color/purple_700"
                 android:text="Нийт 20/20"
                 android:textStyle="bold"/>
 

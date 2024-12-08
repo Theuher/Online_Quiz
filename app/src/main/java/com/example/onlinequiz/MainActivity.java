@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         EditText password = findViewById(R.id.password);
         Button login = findViewById(R.id.login);
         TextView signup = findViewById(R.id.signup);
+        TextView forgetpassword = findViewById(R.id.forgetpassword);
 
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
@@ -76,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
             finish();
         });
+
+        forgetpassword.setOnClickListener((view -> {
+            Intent i = new Intent(MainActivity.this, ForgetPassword.class);
+            startActivity(i);
+            finish();
+        }));
 
     }
 }
